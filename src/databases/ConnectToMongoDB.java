@@ -33,7 +33,7 @@ public class ConnectToMongoDB {
         return profile + " has been registered";
     }
 
-    public List<User> readUserProfileFromMongoDB(){
+    /*public List<User> readUserProfileFromMongoDB(){
         List<User> list = new ArrayList<User>();
         User user = new User();
         MongoDatabase mongoDatabase = connectToMongoDB();
@@ -49,11 +49,11 @@ public class ConnectToMongoDB {
             String stDOB = (String)doc.get("stDOB");
             user.setStID(stDOB);
             user = new User(stName,stID,stDOB);
-            list.add(user);
+            //list.add(user);
         }
         return list;
     }
-
+*/
     public List<String> readFromMongoDB(){
         List<String> list = new ArrayList<String>();
         MongoDatabase mongoDatabase = connectToMongoDB();
