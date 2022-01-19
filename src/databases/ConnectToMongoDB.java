@@ -70,7 +70,7 @@ public class ConnectToMongoDB {
 //        insertIntoToMongoDB(new User("Naomi Chan", "4493","07-1996"));
         //List<User> user = readUserProfileFromMongoDB();
         //for(User person:user){
-            //System.out.println(person.getStName()+ " "+ person.getStID());
+        //System.out.println(person.getStName()+ " "+ person.getStID());
         //}
     }
 }

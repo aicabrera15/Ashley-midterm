@@ -1,0 +1,121 @@
+Please answer the below Data Structure Questions:
+
+why do we need data structure?
+A.Data Structures are necessary for designing efficient algorithms. It provides reusability
+and abstraction . Using appropriate data structure, can help programmers save a good amount of
+time while performing operations such as storage, retrieval or processing of data.
+
+What are the various operations that can be performed on different Data Structures?
+A.Creation, Insertion, Traversal, Search, Array, Stack, Queue, LinkedList.
+
+List out the areas in which data structures are applied extensively?
+A. Data structures are used in any program or software, They are used in the areas of, Compiler Design, Operating
+System, DBMS, Graphics, Simulation, Numerical Analysis.
+
+what is an Array?
+A. A data structure that contains a group of elements. Typically these elements
+are all of the same data type, such as an integer or string.
+
+
+what is the difference between the Array and ArrayList?
+A. Array is an array is a fixed-length data structure and static in size meanwhile
+ArrayList is is a class of Java Collections framework. It contains popular classes like
+Vector, HashTable, and HashMap. ArrayList is dynamic in size.
+
+
+what is LinkedList?
+A. a sequence of data structures, which are connected together via links. Linked List is
+a sequence of links which contains items. ... Link − Each link of a linked list can store a
+data called an element. Next − Each link of a linked list contains a link to the next link called Next.
+
+How is an Array different from Linked List?
+A. a collection of elements of a similar data type. A linked list is a collection of objects
+known as a node where node consists of two parts, i.e., data and address. Array elements store in
+a contiguous memory location. Linked list elements can be stored anywhere in the memory or randomly stored.
+
+what is queue?
+A. A queue is an ordered collection of items where the addition of new items happens at one end, called the
+“rear,” and the removal of existing items occurs at the other end, commonly called the “front.”
+
+what is stack?
+A. A stack is an abstract data type that holds an ordered, linear sequence of items. In contrast to a
+queue, a stack is a last in, first out structure.
+
+what is FIFO and LIFO?
+A. The Last-In, First-Out (LIFO) method assumes that the last unit to arrive in inventory or more recent is
+sold first. The First-In, First-Out (FIFO) method assumes that the oldest unit of inventory is the sold first.
+
+what is the order of complexity?
+A.What is order of complexity? Edit. Generally, an algorithm has an asymptotic computational complexity.
+Assuming the input is of size N, we can say that the algorithm will finish at O(N), O(N^2), O(N^3), O(N*log(N)).
+
+what is the best case to search an element from an array?
+A. The best case of the array is O(1).
+
+what is the worst case to search an element from an array?
+A. The worst case is O(n).
+
+what is tree in data structure?
+A. A tree is a hierarchical data structure defined as a collection of nodes. Nodes represent value and nodes are
+connected by edges. A tree has the following properties: The tree has one node called root. The tree originates from
+this, and hence it does not have any parent.
+
+what is graph in data structure?
+A. A graph is a pictorial representation of a set of objects where some pairs of objects are connected by links.
+The interconnected objects are represented by points termed as vertices, and the links that connect the vertices
+are called edges.
+
+what is the difference between the HashTable and HashMap?
+A. The difference is that HashTable is synchronized and HashMap is not.
+
+What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A. RDBMS = Array (i.e. Array of structures)
+  RDBMS = Array (i.e. Array of structures)Network data model = Graph.
+  RDBMS = Array (i.e. Array of structures)Network data model = Graph.Hierarchical data model = Trees.
+How HashMap works in java?
+A. HashMap uses multiple buckets and each bucket points to a Singly Linked List where the entries (nodes) are stored.
+Once the bucket is identified by the hash function using hashcode, then hashCode is used to check if there is already a
+key with the same hashCode or not in the bucket(singly linked list).
+
+What is ArrayIndexOutOfBoundsException in java? When it occurs?
+A. ArrayIndexOutOfBoundsException is thrown to indicate that we are trying to access array element with an illegal index.
+This exception is thrown when the index is either negative or greater than or equal to the size of the array.
+
+What are the different ways of copying an array into another array?
+A. Manually, Arrays.copyOf(), System.arraycopy(), Object.clone()
+
+What is difference between an array and a linked list?
+A. An array is a collection of elements of a similar data type.
+Array elements store in a contiguous memory location and linked list is a collection of objects known as a node
+where node consists of two parts, i.e., data and address.
+
+What is DFS and BFS?
+A. Depth-first search (DFS) is an algorithm for searching a graph or tree data structure and
+BFS is a traversing algorithm where you should start traversing from a selected node and traverse
+the graph layer wise thus exploring the neighbour nodes.
+
+What is Recursion?
+A. A process in which the function calls itself indirectly or directly in order to solve the problem.
+
+What are linear and non linear data Structures?
+A. Linear is a type of Data Structure where the data elements get linearly or sequentially arranged.
+The elements attach themselves to their next and previous adjacent. The structure involves only a single
+level- allowing a user to traverse all its components in a single run.
+Non-linear is  a form of data structure where the data elements don’t stay arranged linearly or sequentially.
+Since the data structure is non-linear, it does not involve a single level. Therefore, a user can’t traverse
+all of its elements in a single run.
+
+What is Big-(O)-notation?
+A. Big O notation is a mathematical notation that describes the limiting behavior of a function when the
+argument tends towards a particular value or infinity. ... In computer science, big O notation is used to
+classify algorithms according to how their run time or space requirements grow as the input size grows.
+
+Outlined different kind of sorting algorithm with time complexity?
+
+Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
+  a)In terms of Accessing element.
+  b)In terms of Inserting element.
+  c)In terms of Searching element.
+  d)In terms of Removing element.
+
+

@@ -2,6 +2,10 @@ package algorithm;
 
 import org.junit.Assert;
 
+import org.junit.Test;
+
+import static org.junit.Assert.assertArrayEquals;
+
 public class UnitTestSorting {
 
     /*
@@ -23,9 +27,48 @@ public class UnitTestSorting {
 
         //Now implement Unit test for rest of the soring algorithm...................below
 
+        System.out.println("After Selection Sort");
+
+        for(int i:sortedArray){
+
+            System.out.print(i+" ");
+
+        }
+
+    }
+
+    @Test
+
+    public void checkIfDataSorted() {
+
+        Sort sort = new Sort();
+
+        int [] sortedArray;
+
+        int [] unSortedArray;
+
+        try {
+
+            unSortedArray = new int []{1,5,4,8,2,6,9};
+
+            sortedArray = sort.selectionSort(unSortedArray);
+
+            System.out.println("assertArrayEquals(unSortedArray, sortedArray)");
 
 
+            unSortedArray = new int []{5,1,7,9,3,2,6};
+
+            sortedArray = sort.selectionSort(unSortedArray);
+
+           System.out.println("assertArrayEquals;(unSortedArray, sortedArray)");
+
+        }catch(Exception ex){
+
+            ex.getMessage();
+
+        }
 
 
     }
+
 }
