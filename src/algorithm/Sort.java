@@ -58,16 +58,13 @@ public class Sort {
 
     public int[] bubbleSort(int [] array){
         int [] list = array;
-        //implement here
-        // length of list
+
         int n = list.length;
         // defining variable temp to store required value
         int temp = 0;
-        // Bubble sort algo
+
         for(int i=0; i < n; i++){
             for(int j=1; j < (n-i); j++){
-                // if value at j-1 greater than at j
-                // swap values
                 if(list[j-1] > list[j]){
                     //swap values
                     temp = list[j-1];
@@ -76,24 +73,23 @@ public class Sort {
                 }
             }
         }
-        // returning list
         return list;
     }
 
 
     public int [] mergeSort(int [] array){
         int [] list = array;
-        //implement here
+
         if(list == null)
         {
             //return;
         }
         if(list.length > 1)
         {
-            // mid of list
+
             int mid = list.length / 2;
 
-            // Split left part
+
             int[] left = new int[mid];
             for(int i = 0; i < mid; i++)
             {
@@ -260,30 +256,22 @@ public class Sort {
 
         for (int i = n - 1; i > 0; i--)
         {
-            // swap value of first indexed
-            // with last indexed
+
             temp = list[0];
             list[0]=list[i];
             list[i] = temp;
 
 
-            // maintaining heap property
-            // after each swapping
             int j = 0, index;
 
             do
             {
                 index = (2 * j + 1);
 
-                // if left child is smaller than
-                // right child point index variable
-                // to right child
                 if (index < (i - 1) && list[index] < list[index + 1])
                     index++;
 
-                // if parent is smaller than child
-                // then swapping parent with child
-                // having higher value
+
                 if (index < i && list[j] < list[index]){
                     temp = list[j];
                     list[j]=list[index];
@@ -300,7 +288,7 @@ public class Sort {
     }
 
 
-    public int [] bucketSort(int [] array){
+    public int [] bucketSort(int[] array, int i){
         int [] list = array;
         //implement here
 
@@ -309,7 +297,7 @@ public class Sort {
         return list;
     }
 
-    public int [] shellSort(int [] array){
+    public int [] shellSort(int[] array, int length){
         int [] list = array;
         //implement here
 
@@ -337,5 +325,12 @@ public class Sort {
 
         System.out.print("Sorted array: ");
         printSortedArray(arr);
+    }
+
+
+    public void mergeSort(int[] array, int i, int i1) {
+    }
+
+    public void quickSort(int[] array, int i, int i1) {
     }
 }
