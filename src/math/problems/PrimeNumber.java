@@ -1,8 +1,9 @@
 package math.problems;
 import java.util.*;
-import java.io.*;
+import java.util.ArrayList;
 
 public class PrimeNumber {
+	public static void main(String[] args) {
 	/*
 	 * Find list of Prime numbers from number 2 to 1 million.
 	 * Try the best solution as possible.Which will take less CPU life cycle.
@@ -13,72 +14,35 @@ public class PrimeNumber {
 	 *
 	 */
 
-	static boolean checkPrime(int n)
-	{
-		boolean isPrime = true;
+        System.out.println(primeNumbers(1000000));
 
-		for (int i = 2; i <=Math.sqrt(n) ; i++) {
-			if(n%i==0) {
-				isPrime = false;
-				break;
+}
+
+	public static List<Integer> primeNumbers(int maxNumber) {
+		List<Integer> primeNumbers = new ArrayList<>();
+
+		if (maxNumber >= 2) {
+			primeNumbers.add(2);
+		}
+		for (int i = 3; i <= maxNumber; i += 2) {
+			if (isPrime(i)) {
+				primeNumbers.add(i);
 			}
 		}
-
-		if(isPrime){
-			return true;
-		}else{
-			return false;
-		}
+		return primeNumbers;
 	}
 
-	public static void main(String[] args) {
+	//HELPER METHOD:
 
-		int numberOfPrimes = 0;
-
-		ArrayList<Integer> arrList = new ArrayList();
-
-		for(int i=2; i<=1000000; i++)
-		{
-
-			if(checkPrime(i)){
-
-
-				arrList.add(i);
-
-
-				numberOfPrimes++;
+	private static boolean isPrime(int number) {
+		for (int i = 2; i*i <= number; i++) {
+			if (number % i == 0) {
+				return false;
 			}
 		}
+		return true;
 
-
-		System.out.println(numberOfPrimes);
-
-
-		try
-		{
-
-			FileWriter writer = new FileWriter("primeNumbers.txt");
-
-
-			for(int i=0; i<arrList.size(); i++)
-			{
-
-				writer.write(arrList.get(i) + ", ");
-
-				if((i+1) % 10 == 0){
-					writer.write("\n");
-				}
-			}
-
-			writer.close();
-
-
-			System.out.println("Data successfully wrote to the file!");
-
-
-		} catch (IOException e) {
-			System.out.println("An error occurred.");
-			e.printStackTrace();
-		}
 	}
+
+
 }
